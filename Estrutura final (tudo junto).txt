@@ -1,0 +1,6 @@
+conta-comigo/
+├── index.html
+├── style.css
+├── script.js
+├── logo.png       ← coloque sua logo aqui
+└── favicon.svg

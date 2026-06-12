@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conta Comigo - Especialistas em pequenas e médias reformas. Solicite seu orçamento via WhatsApp.">
+    <meta name="author" content="Conta Comigo">
+    <title>Conta Comigo | Pequenas e médias reformas</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo Conta Comigo" class="logo-img">
+                <span>Conta Comigo</span>
+            </div>
+            <a href="https://www.instagram.com/contacomigoservicos.oficial" target="_blank" rel="noopener noreferrer" class="instagram-link">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Conta Comigo</h1>
+                <p class="hero-subtitle">Pequenas e médias reformas</p>
+                <p class="hero-tagline">Fazemos sua mudança com total responsabilidade. Conte com a gente.</p>
+                <a href="#budget" class="btn-primary">Solicitar Orçamento</a>
+            </div>
+        </section>
+
+        <!-- ==================== SERVICES SECTION ==================== -->
+        <section class="services">
+            <div class="container">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="services-grid" id="servicesGrid">
+                    <!-- Serviços serão injetados via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== BUDGET SECTION ==================== -->
+        <section id="budget" class="budget">
+            <div class="container">
+                <div class="budget-card">
+                    <h2 class="section-title">Solicite um Orçamento</h2>
+                    <p class="budget-description">Preencha os campos abaixo e nossa equipe entrará em contato pelo WhatsApp.</p>
+                    <form id="budgetForm">
+                        <div class="form-group">
+                            <label for="name">Seu nome completo</label>
+                            <input type="text" id="name" name="name" placeholder="Ex: João Silva" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Tipo de serviço</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Selecione uma opção</option>
+                            </select>
+                            <span class="error-message" id="serviceError"></span>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <img src="logo.png" alt="Logo Conta Comigo" class="footer-logo-img">
+                <h3>Conta Comigo</h3>
+                <p>Pequenas e médias reformas</p>
+            </div>
+            <div class="footer-contacts">
+                <a href="https://www.instagram.com/contacomigoservicos.oficial" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i> @contacomigoservicos.oficial
+                </a>
+                <a href="https://wa.me/556185710321" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> (61) 8571-0321
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">© 2025 Conta Comigo. Todos os direitos reservados.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
